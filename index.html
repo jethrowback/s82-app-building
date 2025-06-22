@@ -1,55 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Edu Resource Hub</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Think U - Inspire. Learn. Achieve.</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- NAV -->
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#categories-section">Categories</a>
-    <a href="#about">About</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Think U</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#introduction">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <!-- HOME -->
-  <section id="home">
-    <div id="introduction">
-      <h1>Welcome!</h1>
-      <p>Intro text…</p>
-    </div>
-    <div id="featured">
-      <h2>Featured</h2>
-      <!-- … -->
-    </div>
-  </section>
-
-  <!-- CATEGORIES -->
-  <section id="categories-section">
-    <div id="categories">
-      <h2>Category Listings</h2>
-      <!-- … -->
-    </div>
-    <div id="resources">
-      <h2>Sample Resources</h2>
-      <!-- … -->
+  <!-- HERO -->
+  <section id="home" class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="display-4 text-primary">Think U — the “Thank You” University!</h1>
+      <p class="lead mb-4">
+        We heard you say “thank you” and thought, “why not make learning feel like a gift?”
+        Our courses are our way of saying thanks back to your curious mind.
+      </p>
+      <a href="#courses" class="btn btn-outline-primary btn-lg">
+        Claim Your Thank-You Seat
+      </a>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div id="mission">
-      <h2>Our Mission</h2>
-      <!-- … -->
-    </div>
-    <div id="contact">
-      <h2>Contact Info</h2>
-      <!-- … -->
+  <!-- WHY CHOOSE -->
+  <section id="introduction" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4 text-primary">Why Choose Think U?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Personalized Learning</h5>
+          <p>Your goals guide the course—think of it as a thank-you note for your unique journey.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Expert Mentors</h5>
+          <p>Industry pros who say “thanks for learning” by sharing insider secrets.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Community Driven</h5>
+          <p>A generous peer network cheering you on—because gratitude is contagious.</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- PROGRAM CATEGORIES -->
+  <section id="categories" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4 text-primary">Program Categories</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h6>Academic Tracks</h6>
+          <p>Deep dives into theory—our way of thanking your brain for its curiosity.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Professional Skills</h6>
+          <p>Career-boosting courses—because we appreciate your ambition.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Creative Workshops</h6>
+          <p>Hands-on fun to spark ideas—proof that thanks can be playful.</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <strong>Live Seminars</strong>
+          <p>Interactive sessions—like a virtual high-five of gratitude.</p>
+        </div>
+        <div class="col-md-6">
+          <strong>Resource Library</strong>
+          <p>Ebooks, toolkits, and more—our way of handing you a thank-you gift bag.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR MISSION -->
+  <section id="mission" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <img src="images/mission.png" alt="Thank you book illustration" class="img-fluid rounded">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="text-primary">Our Mission</h2>
+          <p>
+            At Think U, we believe a simple “thank you” can spark a lifetime of learning.
+            Our mission is to say thanks by offering top-notch, accessible education
+            for every curious soul.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROGRAMS -->
+  <section id="courses" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4 text-primary">Featured Programs</h2>
+      <div class="row g-4">
+        <!-- Critical Thinking -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/critical thinking.png" class="card-img-top" alt="Critical Thinking">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Critical Thinking Fundamentals</h5>
+              <p class="card-text">
+                Our thanks for your curiosity—sharpen your problem-solving superpowers.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Management -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/proj management.png" class="card-img-top" alt="Project Management">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Project Management Essentials</h5>
+              <p class="card-text">
+                Say thanks to your future self—master project leadership with expert guidance.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Creative Writing -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/creative writing2.png" class="card-img-top" alt="Creative Writing">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Creative Writing Workshop</h5>
+              <p class="card-text">
+                A thank-you note in every sentence—unleash your storytelling magic.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4 text-primary">What Our Students Say</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>“I joined Think U to upskill, but left with a heart full of gratitude—thank you, Think U!”</p>
+            <footer class="blockquote-footer">Riley B., <cite>Creative Writing Workshop Graduate</cite></footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>“Think U’s welcoming community made learning feel like a thank-you party every day!”</p>
+            <footer class="blockquote-footer">Taylor C., <cite>project Management Student</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER -->
+  <footer id="contact" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-6 mb-4">
+          <h5>Follow us on social media:</h5>
+          <div class="d-flex gap-3 fs-3">
+            <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-info"><i class="bi bi-twitter"></i></a>
+          </div>
+          <p class="mt-3 mb-0">Email: <a href="mailto:hello@thinku.com">hello@thinku.com</a></p>
+          <p>Phone: +63 998 971 5833</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name" required></div>
+            <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email" required></div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <hr class="separator">
+      <p class="text-center mb-0">© 2025 Think U. Empowering learners everywhere.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/sections.js"></script>
 </body>
 </html>
