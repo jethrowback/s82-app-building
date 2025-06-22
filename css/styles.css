@@ -1,0 +1,11 @@
+body { margin:0; font-family:sans-serif; }
+
+.navbar { display:flex; gap:1rem; padding:1rem; background:#333; }
+
+.navbar a { color:#fff; text-decoration:none; }
+
+section { padding:2rem; }
+
+@media(min-width:768px) {
+  .navbar { justify-content:center; }
+}
